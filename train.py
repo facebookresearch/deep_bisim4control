@@ -28,8 +28,8 @@ def parse_args():
     parser.add_argument('--image_size', default=84, type=int)
     parser.add_argument('--action_repeat', default=1, type=int)
     parser.add_argument('--frame_stack', default=3, type=int)
-    parser.add_argument('--resource_files', default='/private/home/amyzhang/pytorch_sac_ae/distractors/*.mp4', type=str)
-    parser.add_argument('--eval_resource_files', default='/private/home/amyzhang/pytorch_sac_ae/distractors/*.mp4', type=str)
+    parser.add_argument('--resource_files', type=str)
+    parser.add_argument('--eval_resource_files', type=str)
     parser.add_argument('--img_source', default=None, type=str, choices=['color', 'noise', 'images', 'video', 'none'])
     parser.add_argument('--total_frames', default=10000, type=int)
     # replay buffer
