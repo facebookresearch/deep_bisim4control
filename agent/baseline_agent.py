@@ -151,7 +151,7 @@ class BaselineAgent(object):
             if pred_trans_sigma is None:
                 pred_trans_sigma = 1.
             if isinstance(pred_trans_mu, list):  # i.e. comes from an ensemble
-                raise NotImplementedError  # TODO[Rowan]: handle the additional ensemble dimension (0) in this case
+                raise NotImplementedError  # TODO: handle the additional ensemble dimension (0) in this case
             diff = (state + pred_trans_mu - next_state) / pred_trans_sigma
             normalization = torch.log(pred_trans_sigma)
         return norm * (diff.pow(2) + normalization).sum(1)
