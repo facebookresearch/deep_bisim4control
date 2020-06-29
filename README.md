@@ -5,7 +5,7 @@ We assume you have access to a gpu that can run CUDA 9.2. Then, the simplest way
 ```
 conda env create -f conda_env.yml
 ```
-After the instalation ends you can activate your environment with:
+After the installation ends you can activate your environment with:
 ```
 source activate dbc
 ```
@@ -17,7 +17,7 @@ python train.py \
     --domain_name cheetah \
     --task_name run \
     --encoder_type pixel \
-    --decoder_type pixel \
+    --decoder_type identity \
     --action_repeat 4 \
     --save_video \
     --save_tb \
@@ -44,7 +44,7 @@ R - episode reward
 BR - average reward of sampled batch
 ALOSS - average loss of actor
 CLOSS - average loss of critic
-RLOSS - average reconstruction loss (only if is trained from pixels and decoder)
+RLOSS - average reconstruction loss (only if it is trained from pixels and decoder)
 ```
 while an evaluation entry:
 ```
