@@ -52,6 +52,9 @@ while an evaluation entry:
 ```
 which just tells the expected reward `ER` evaluating current policy after `S` steps. Note that `ER` is average evaluation performance over `num_eval_episodes` episodes (usually 10).
 
+### Running the natural video setting
+You can download the Kinetics 400 dataset and grab the driving_car label from the train dataset to replicate our setup. Some instructions for downloading the dataset can be found here: https://github.com/Showmax/kinetics-downloader.
+
 ## CARLA
 Download CARLA from https://github.com/carla-simulator/carla/releases, e.g.:
 1. https://carla-releases.s3.eu-west-3.amazonaws.com/Linux/CARLA_0.9.8.tar.gz
