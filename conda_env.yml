@@ -13,7 +13,7 @@ dependencies:
     - git+git://github.com/deepmind/dm_control.git
     - git+git://github.com/1nadequacy/dmc2gym.git
     - opencv-python
-    - pillow=6.1
+    - pillow==6.1
     - scikit-image
     - scikit-video
     - tb-nightly
